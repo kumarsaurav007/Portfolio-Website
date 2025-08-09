@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Saurav Kumar — Developer Portfolio</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet (create style.css in same folder) -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="brand">Saurav Kumar</div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-left">
+                <h1>Hi, I am <span class="name">Saurav</span></h1>
+                <p class="subtitle">I am a <span id="typed-element" class="typed"></span></p>
+                <p class="lead">Building web applications with React, Node.js, Python and cloud technologies.</p>
+                <a href="/Resume - Saurav Kumar.pdf" download="Saurav Kumar - Resume.pdf" target="_blank"
+                    class="btn download-btn">
+                    Download Resume
+                </a>
+
+            </div>
+
+            <div class="hero-right">
+                <img src="/assets/bg.png" alt="Illustration of developer at desk" class="hero-image">
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="about" class="section container">
+            <h2>Work Experience</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <img class="timeline-icon" src="/assets/developer.png" alt="Developer icon">
+                    <div class="timeline-content">
+                        <h3>Software Development Intern</h3>
+                        <p class="meta">Datansh Solutions — Mar 2025 – May 2025 | Jaipur, India</p>
+                        <ul>
+                            <li>Received hands-on training in SQL, MS SQL Server, relational database design, and Azure
+                                cloud technologies.</li>
+                            <li>Assisted in development and optimization of database-driven applications.</li>
+                            <li>Supported data integration and ETL processes for cloud-based solutions.</li>
+                            <li>Collaborated in an agile team to apply real-world software engineering practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript (ES6+)</span>
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Express.js</span>
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">Flask</span>
+                <span class="skill-badge">Django</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Azure</span>
+                <span class="skill-badge">Firebase</span>
+                <span class="skill-badge">Power BI</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">GitHub</span>
+                <span class="skill-badge">Postman</span>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                
+                <article class="card">
+                    <h3>Netflix Clone</h3>
+                    <p>React, Node.js, Express, MongoDB — TMDB integration, Firebase auth, REST APIs.</p>
+                    <ul class="project-list">
+                        <li>Developed a responsive Netflix-like front-end using React.js with dynamic content rendering.</li>
+                        <li>Integrated TMDB API to fetch trending movies, genres, and banners dynamically using Axios.</li>
+                        <li>Implemented back-end with Node.js, Express.js, and MongoDB for authentication and data storage.</li>
+                        <li>Used Firebase for authentication, Postman for API testing, and followed RESTful API standards.</li>
+                    </ul>
+                </article>
+        
+                <article class="card">
+                    <h3>Blog Website</h3>
+                    <p>Flask, SQLAlchemy, Flask-Login — CRUD, authentication, and responsive UI.</p>
+                    <ul class="project-list">
+                        <li>Developed a blog website using Flask with secure user authentication via Flask-Login.</li>
+                        <li>Integrated SQLAlchemy for database design and management, and Flask-WTF for form handling.</li>
+                        <li>Created responsive HTML/CSS templates and implemented CRUD operations for blog posts.</li>
+                        <li>Implemented search and filter functionality for improved content discovery.</li>
+                    </ul>
+                </article>
+        
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-inner container">
+            <div>
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:sauravkumarofficial29@gmail.com">sauravkumarofficial29@gmail.com</a></p>
+                <p>Phone: +91 9501907334</p>
+            </div>
+            <div>
+                <!-- <h4>Links</h4> -->
+                <p>
+                    <a href="https://linkedin.com/in/sauravkumar07" target="_blank">
+                        <img src="/assets/linkedin-logo.png" alt="LinkedIn" class="footer-icon">
+                        LinkedIn
+                    </a>
+                </p>
+                <p>
+                    <a href="https://github.com/kumarsaurav007" target="_blank">
+                        <img src="/assets/github-logo.png" alt="GitHub" class="footer-icon">
+                        GitHub
+                    </a>
+                </p>
+                <p>
+                    <a href="https://leetcode.com/u/Saurav_Kumar007/" target="_blank">
+                        <img src="/assets/leetcode-logo.png" alt="Leetcode" class="footer-icon">
+                        Leetcode
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // initialize typed effect
+        const typed = new Typed('#typed-element', {
+            strings: ['Fullstack Developer.', 'Backend Engineer.', 'Python & JavaScript Developer.'],
+            typeSpeed: 60,
+            backSpeed: 35,
+            backDelay: 1500,
+            loop: true
+        });
+
+        // mobile nav toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('.nav-list');
+        navToggle.addEventListener('click', () => navList.classList.toggle('open'));
+    </script>
+</body>
+
+</html>
